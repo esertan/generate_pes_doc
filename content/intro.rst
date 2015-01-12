@@ -1,3 +1,4 @@
-Intro
------
+Introduction
+------------
+
 Hello!
