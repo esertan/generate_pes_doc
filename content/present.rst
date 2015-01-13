@@ -1,2 +1,16 @@
-Present stage
--------------
+Present state of affairs
+------------------------
+Ok, so I have confessed my earlier shocking code management sins (sorry everybody!) and I solemnly swear that I won't let my folders end up in such a mess ever again (well not let them stay like that for long anyway). I will now move on to describing the current vastly improved state of my code and management.
+
+As I mentioned in the introduction, I chose to work with only one of my scripts, the one for calculating geometries for generation of potential energy surfaces. There are two reasons for this; firstly it is a code that I've managed exactly in the manner described in the background section and secondly it is probably the script I use most frequently and it needed addition of some new functions for my current research project.
+
+The first improvement I made was to move the the source code to its own folder and created a Git repository there. And I will always run the code from just one place in each machine I use, thus avoiding the problem with multiple copies. I also connected my local repository to a remote one on GitHub: https://github.com/esertan/generate_pes.git. This way I will always have my last approved code in one place and I will not have worry about which version of the code that is the correct one.  
+
+My next step was to modularise my code, so that it would be easier to add new functions and debug. I created three different modules, one with functions for reading input, allocating memory and storing the input in the right format, one with functions for doing the calculations and one with functions for writing results to output. After this I had code where it would be easier to include new functions and to know where to put them. In this step I also used CMake to create a makefile where all my modules were included. When I started adding new functions to the code, I also specified a set compiler flags that was more extensive than what I usually use when I compile without CMake. This helped remarkably in the debugging process and I never want to compile a code like this without CMake ever again.
+
+After finishing the above mentioned steps, I started adding the new functions. One of the first functions I added was one that could read a keyword from the input file and execute the program accordingly. E.g. the keyword INTERNAL specifies that the geometry should also be generated in Z-matrix coordinates. This way the program does not compute the geometries in internal coordinates by default, like it did before, and I don't get the folder packed with output files I don't need. 
+
+This functionality was also useful when I started adding functions for the calculation of the two dimensional potential energy surface. With the keyword 2DIMENSIONAL the code generates geometries by combining the two vibrational modes specified in the input. If the keyword is left out, the of course no geometries of this type is generated. So, now I do not have to change the program depending on if I need these geometries of not, I just change the input.
+
+Before even starting this project, I had already chosen to create a program that reads all the necessary input from a specific input file. In this file I can of course choose a specific format for the data, so the problem with different formats of the input was not an issue in this case. 
+
