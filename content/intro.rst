@@ -7,4 +7,7 @@ As I am presently not involved in a software development project I decided to ap
 
 For this project I chose to work with a script that generates molecular geometries from displacement vectors obtained by normal mode analysis. The geometries are then used as input for quantum chemistry calculations of the potential energy surface along the vibrational mode of the vibrational coordinates of the molecule.
 
-My plan was to first modularise the existing code so that it would easier to use and modify. More specifically I had in mind a code that could compute new geometries in different coordinate systems (in this case cartesian and Z-matrix form) and that could also create input to a kind of two dimensional potential surface obtained by combining the effect of displacement vectors of two vibrational modes.
+My plan was to first modularise the existing code so that it would easier to use and modify. More specifically I had in mind a code that could compute new geometries in different coordinate systems (in this case cartesian and Z-matrix form) and that could also create input to a kind of two dimensional potential energy surface obtained by combining the effect of displacement vectors of two vibrational modes.
+
+After all this geometry generation and quantum chemistry calculation I actually use the potential energy surfaces(!) to calculate the resonant inelastic x-ray scattering by wave packet propagation. In this way we manage to include the decay of the intermediary state and study the vibrational excitation of the final state. 
+
