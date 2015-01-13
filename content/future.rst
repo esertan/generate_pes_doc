@@ -1,2 +1,7 @@
-FUTURE
-------
+Future development
+------------------
+The development of this code is of course still in progress. The parts I have now focused on is the functionalities that are necessary for my present project, i.e. the generation of geometries in internal coordinates and generation of the two dimensional potential surfaces. Therefore the number of vibrational modes that can be included at present are limited to three, that is, it works only for triatomic molecules that are not linear (3N-6). The principal limiting factor is the conversion from cartesian coordinates to internal coordinates. This function presently only uses calculates the bond lengths and angle from the cartesian input. To extend the code so that it could handle bigger molecules, the dihedral angle would also have to be computed. This I have not been able to include yet, but it is probably one of the changes I plan to make soon.
+
+Another function that could be useful to add is the calculation of the displacement vectors in internal coordinates. This is not provided from our quantum chemistry calculations and is done in another script. I plan to investigate how much effort it would take to include this functionality in the code.
+
+Finally, I think that the flexibility of which modules and functions I want to include in my calculations could be a little better. Even if it is much easier now than before to select and deselect which part of the code I want to run, I think this part must be developed continuously with the addition of more functionality.

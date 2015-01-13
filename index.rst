@@ -14,7 +14,7 @@ Contents:
    content/intro.rst
    content/background.rst
    content/present.rst
-   content/codedoc.rst
    content/future.rst
+   content/codedoc.rst
 
 
