@@ -47,7 +47,7 @@ Function doc
         function integer function read_key(checkkey)
 
 In module ``pes_init`` :
-Function reads keyword from input and compares in to character input. Returs 1 if keyword matches character else 0.
+Function reads keyword from input and compares in to character input. Returns 1 if keyword matches character else 0.
 
     ::
 
@@ -85,6 +85,7 @@ In module ``pes_init`` :
 Subroutine deallocates arrays.
 
     ::
+
         subroutine deallocate_2d_arrays(...)
       
 In module ``pes_init`` :
