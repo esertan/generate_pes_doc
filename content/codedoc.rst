@@ -17,21 +17,21 @@ Keywords
 
 ``DISPLacement`` : specify the displacement vectors in cartesian form (REQUIRED)::
  
-    a1x [mode1 mode2 mode3]
-    a1y [mode1 mode2 mode3]
-    a1z [mode1 mode2 mode3]
-    a2x [mode1 mode2 mode3]
-    a2y [mode1 mode2 mode3]
-    a2z [mode1 mode2 mode3]
-    a3x [mode1 mode2 mode3]
-    a3y [mode1 mode2 mode3]
-    a3z [mode1 mode2 mode3]
+    [mode1 mode2 mode3] a1x
+    [mode1 mode2 mode3] a1y
+    [mode1 mode2 mode3] a1z
+    [mode1 mode2 mode3] a2x
+    [mode1 mode2 mode3] a2y
+    [mode1 mode2 mode3] a2z
+    [mode1 mode2 mode3] a3x
+    [mode1 mode2 mode3] a3y
+    [mode1 mode2 mode3] a3z
 
 ``INTERnal`` : specify the displacement vectors in internal (Z-matrix) form (OPTIONAL) ::
 
-    mode1 [r1 r2 theta]
-    mode2 [r1 r2 theta]
-    mode3 [r1 r2 theta]
+    [r1 r2 theta] mode1
+    [r1 r2 theta] mode2
+    [r1 r2 theta] mode3
 
 ``2DIMEnsional`` : specify generation of 2 dimensional geometry by combination of two vibrational modes (OPTIONAL, ``INTERnal`` REQUIRED)::
 
